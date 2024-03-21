@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMElab Africa (Social Media Lab Africa) </title>
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <style>
+      
+
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    margin-right: 10px; /* Adjusted margin */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0; /* Smaller padding */
+    color: yellow;
+    background-image: url('navbar_background.jpg');
+    /*  Dark blue background color */
+    /*border-radius: 20px; /* Rounded corners */
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: yellow; /* Change color to darken blue */
+    text-transform: uppercase;
+    margin: 0 5px; /* Adjusted margin between links */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a:last-child {
+    margin-right: 20px; /* Added margin after the "Contact" link */
+}
+
+.navbar a::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #00008B;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s, opacity 0.5s;
+    opacity: 0; /* Initially hide the underline */
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    opacity: 1; /* Show the underline on hover */
+}
+
+/*nav responsiveness*/
+/* Existing CSS */
+
+/* Existing CSS */
+
+/* Existing CSS */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 0; /* Adjusted padding */
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: smaller; /* Adjusted font size */
+        margin: 5px; /* Adjusted margin */
+        margin-right: 10px; /* Adjusted margin */
+
+    }
+}
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: floralwhite;
+            font-family: 'Karla', sans-serif;
+        }
+
+        h1 {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+
+        .slider-frame {
+            overflow: hidden;
+            height: 200px;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .slide-images {
+            width: 300%;
+            height: 100%;
+            position: relative;
+            animation: slide_animation 10s infinite alternate;
+        }
+
+        .img-container {
+            height: 100%;
+            width: 33.33%;
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .content-container h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content-container h6 {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .aligned-table {
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .aligned-table td {
+            padding: 10px;
+            border: 1px solid goldenrod;
+            text-align: center;
+        }
+
+        .aligned-table td:first-child {
+            background-color: yellow;
+            color: black;
+        }
+
+        @keyframes slide_animation {
+            0% { left: 0; }
+            33.33% { left: -100%; }
+            66.66% { left: -200%; }
+            100% { left: 0; }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .slider-frame {
+                width: 90%;
+            }
+
+            .img-container {
+                width: 50%;
+            }
+
+            .content-container {
+                padding: 0 20px;
+            }
+        }
+
+
+
+        /* Updated CSS for responsiveness and styling */
+
+.reach {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reach p {
+    color:black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.reach button {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 10px; /* Added margin */
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid #00008B;
+    color: goldenrod;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: 0.5s;
+    display: inline-block; /* Changed display to inline-block */
+}
+
+.reach button span {
+    background:black;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.reach button:hover span {
+    width: 100%;
+}
+
+.reach button:hover {
+    background:black;
+    border: none;
+}
+
+/* Updated media queries for responsiveness */
+@media (max-width: 768px) {
+    .reach p {
+        margin-bottom: 15px; /* Adjusted margin for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .reach {
+        margin-top: 30px;
+    }
+
+    .reach p {
+        font-size: 14px;
+        margin-bottom: 10px; /* Adjusted margin for smaller screens */
+    }
+
+    .reach button {
+        width: 150px;
+        padding: 10px;
+        margin: 0 5px; /* Adjusted margin for smaller screens */
+    }
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: floralwhite;
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.slider-frame {
+    overflow: hidden;
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slide-images {
+    width: 300%;
+    height: 100%;
+    position: relative;
+    animation: slide_animation 10s infinite alternate;
+}
+
+.img-container {
+    height: 100%;
+    width: 33.33%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.content-container h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-container h6 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.aligned-table {
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.aligned-table td {
+    padding: 10px;
+    border: 1px solid goldenrod;
+    text-align: center;
+}
+
+.aligned-table td:first-child {
+    background-color: yellow;
+    color: black;
+}
+
+@keyframes slide_animation {
+    0% { left: 0; }
+    33.33% { left: -100%; }
+    66.66% { left: -200%; }
+    100% { left: 0; }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .slider-frame {
+        width: 90%;
+    }
+
+    .img-container {
+        width: 50%;
+    }
+
+    .content-container {
+        padding: 0 20px;
+    }
+}
+
+
+
+
+.footer {
+    background-color: goldenrod;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+td i {
+    margin-right: 5px;
+}
+
+/* Optional: Add some spacing between the icon and text */
+td i {
+    margin-right: 5px;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .footer {
+        overflow-x: auto;
+    }
+
+    table {
+        width: auto;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+    </style>
+        <script src="https://kit.fontawesome.com/f362b7565f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" alt="Logo" class="logo">
+            <a href="index.html"><i class="fa-solid fa-house-user fa-lg" style="color: #FFD43B;"></i> <h3 style="color: yellow;">Home</h3> </a>
+            <a href="about.html"><i class="fa-solid fa-address-card fa-fade fa-lg" style="color: #afaa08;"></i> <h3 style="color: yellow;">About</h3></a>
+            <a href="I2C.html"><i class="fa-solid fa-computer fa-spin fa-spin-reverse fa-lg" style="color: #FFD43B;"></i><h3 style="color: yellow;">I2C</h3></a>
+            <a href="SimLAB.html"><i class="fa-sharp fa-solid fa-book fa-beat-fade fa-lg" style="color: #FFD43B;"></i><h3 style="color: yellow;">SIMElab</h3></a>
+            <a href="AppFactory.html"><i class="fa-solid fa-diagram-project fa-fade fa-lg" style="color: #FFD43B;"></i><h3 style="color: yellow;">AppFactory</h3></a>
+            <a href="Resources.html"><i class="fa-solid fa-toolbox fa-shake fa-lg" style="color: #FFD43B;"></i><h3 style="color: yellow;">Resources</h3></a>
+            <a href="Social-Media.html"><i class="fa-solid fa-globe fa-spin fa-spin-reverse fa-lg" style="color: #FFD43B;"></i><h3 style="color: yellow;">SocialMeadia</h3></a>
+            <a href="contact_us.html"><i class="fa-solid fa-phone fa-spin fa-lg" style="color: #FFD43B;"></i> <h3 style="color: yellow;">Contact</h3></a>
+            
+        </div>
+    <h1>SIMElab Africa (Social Media Lab Africa) </h1>
+    <div class="slider-frame">
+        <div class="slide-images">
+            <div class="img-container">
+                <img src="https://i.pinimg.com/564x/eb/86/fa/eb86fa3ef1d6a253630e7cde7881f534.jpg" alt="">
+            </div>
+            <div class="img-container">
+                <img src="https://i.pinimg.com/564x/9a/63/3e/9a633efadf1b8771b253506c0926ea43.jpg" alt="">
+            </div>
+            <div class="img-container">
+                <img src="https://i.pinimg.com/564x/c3/37/7a/c3377ad0c8d02d249780790952feac36.jpg" alt="">
+            </div>
+            <div class="img-container">
+                <img src="https://i.pinimg.com/564x/d0/95/ed/d095ed1d1ab1ee01d0d09e8e69569662.jpg" alt="">
+            </div>
+            <div class="img-container">
+                <img src="https://i.pinimg.com/564x/eb/86/fa/eb86fa3ef1d6a253630e7cde7881f534.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="content-container">
+        <h4>What do we do?</h4>
+        <h6>SIMElab Africa (Social Media Lab Africa) is an interdisciplinary Center for Research in Big Data and Social Media Analytics Research Lab housed at USIU-Africa's Freida Brown Innovation Center. SIMElab Africa offers a research and development environment to USIU-Africa faculty and students, civil society and corporate businesses, and policymakers in Kenya and beyond. SIMELab is jointly funded by the USA Embassy in Nairobi and USIU-Africa.</h6>
+    </div>
+    <table class="aligned-table">
+        <tr>
+            <td style="background-color: transparent;">The Objectives of the SIMElab are to:</td>
+            <td>SIMElab Activities;</td>
+        </tr>
+        <tr>
+            <td>
+                Provide an annual status on social media consumption in Kenya leading to an annual report;<br>
+                Conduct quarterly training on social media analytics for academics and the private sector in Kenya;<br>
+                Develop a monthly data repository on social media consumption in Kenya; and<br>
+                Disseminate quality and reputable research through journal and conference publications
+            </td>
+            <td>
+                Monitor and Analyze Social Media Trends<br>
+                Social Media Data Analytics Workshops and Webinars<br>
+                Social Media Data Analytics Training
+            </td>
+        </tr>
+    </table>
+    </div>
+    <div class="reach">
+        <p>Speak to us at I2C and discover the tricks of turning your passion and hobbies into profit, press the button to get started.</p>
+        <button type="button" onclick="window.location.href='I2C.html'"><span></span>Explore More</button>
+        <button type="button" onclick="window.location.href='form.html'"><span></span>Apply</button>
+                    </div>
+</body>
+<footer class="footer">
+    <div class="footer">
+        <table>
+            <tr>
+                <td><i class="fas fa-map-marker-alt"></i> Location : USIU-Africa University campus, Innovation Building<a href="https://www.google.com/maps/place/United+States+International+University+Africa/@-1.2180945,36.8792139,15z/data=!4m6!3m5!1s0x182f15f826d2697b:0x283746033cb1b5a5!8m2!3d-1.2180945!4d36.8792139!16s%2Fm%2F0130s39z?entry=ttu" style="color: green;"> [Map here]</a></td>
+                <td><i class="fas fa-phone"></i> Phone Number</td>
+                <td><i class="fas fa-envelope"></i> Email</td>
+            </tr>
+        </table>
+    </div>
+    
+    </footer>
+</html>

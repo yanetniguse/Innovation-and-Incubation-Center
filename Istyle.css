@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    margin-right: 10px; /* Adjusted margin */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0; /* Smaller padding */
+    color: yellow;
+    background-image: url('navbar_background.jpg');
+    /*  Dark blue background color */
+    /*border-radius: 20px; /* Rounded corners */
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: yellow; /* Change color to darken blue */
+    text-transform: uppercase;
+    margin: 0 5px; /* Adjusted margin between links */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a:last-child {
+    margin-right: 20px; /* Added margin after the "Contact" link */
+}
+
+.navbar a::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #00008B;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s, opacity 0.5s;
+    opacity: 0; /* Initially hide the underline */
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    opacity: 1; /* Show the underline on hover */
+}
+
+/*nav responsiveness*/
+/* Existing CSS */
+
+/* Existing CSS */
+
+/* Existing CSS */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 0; /* Adjusted padding */
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: smaller; /* Adjusted font size */
+        margin: 5px; /* Adjusted margin */
+        margin-right: 10px; /* Adjusted margin */
+
+    }
+}
+
+.table-container {
+    text-align: center;
+    background-color:yellow;
+
+}
+
+.table-container table {
+    margin: auto;
+}
+
+.table-container h1 {
+    color: #060664;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.table-container h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contentB {
+    text-align: center;
+}
+
+.contentB h6 {
+    color: #060664;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contentB p {
+    color: #060664;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.grid-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    width: 45%;
+    padding: 20px;
+    background-color: #060664;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+
+
+.SLIDE {
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  .slide {
+    display: flex;
+    height: 20%;
+    width: 30%;
+    transition: transform 0.5s ease;
+    animation: slideAnimation 7s linear infinite running;
+  }
+  
+  .slide img {
+    width: 60%;
+    height: 60%;
+    float: left;
+    object-fit: cover;
+  }
+  
+  
+  @keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+  
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+
+
+  .image-description {
+    text-align: center;
+    font-weight: lighter;
+    color:black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.image-description img {
+    width: auto; /* Adjust image width as needed */
+    height: 200px; /* Set the desired height */
+}
+
+.image-description p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+* Updated CSS for responsiveness and styling */
+
+.reach {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reach p {
+    color:black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.reach button {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 10px; /* Added margin */
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid #00008B;
+    color: goldenrod;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: 0.5s;
+    display: inline-block; /* Changed display to inline-block */
+}
+
+.reach button span {
+    background:black;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.reach button:hover span {
+    width: 100%;
+}
+
+.reach button:hover {
+    background:black;
+    border: none;
+}
+
+/* Updated media queries for responsiveness */
+@media (max-width: 768px) {
+    .reach p {
+        margin-bottom: 15px; /* Adjusted margin for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .reach {
+        margin-top: 30px;
+    }
+
+    .reach p {
+        font-size: 14px;
+        margin-bottom: 10px; /* Adjusted margin for smaller screens */
+    }
+
+    .reach button {
+        width: 150px;
+        padding: 10px;
+        margin: 0 5px; /* Adjusted margin for smaller screens */
+    }
+}
+
+.footer {
+    background-color: goldenrod;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+td i {
+    margin-right: 5px;
+}
+
+/* Optional: Add some spacing between the icon and text */
+td i {
+    margin-right: 5px;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .footer {
+        overflow-x: auto;
+    }
+
+    table {
+        width: auto;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+

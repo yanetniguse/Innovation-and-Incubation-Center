@@ -1,0 +1,282 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 90vh;
+    background-image: url('https://i.pinimg.com/236x/ba/2a/a1/ba2aa167172752452273c2e8f1d96541.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    margin-right: 10px; /* Adjusted margin */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0; /* Smaller padding */
+    color: yellow;
+    background-image: url('navbar_background.jpg');
+    /*  Dark blue background color */
+    /*border-radius: 20px; /* Rounded corners */
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: yellow; /* Change color to darken blue */
+    text-transform: uppercase;
+    margin: 0 5px; /* Adjusted margin between links */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a:last-child {
+    margin-right: 20px; /* Added margin after the "Contact" link */
+}
+
+.navbar a::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #00008B;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s, opacity 0.5s;
+    opacity: 0; /* Initially hide the underline */
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    opacity: 1; /* Show the underline on hover */
+}
+
+/*nav responsiveness*/
+/* Existing CSS */
+
+/* Existing CSS */
+
+/* Existing CSS */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 0; /* Adjusted padding */
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: smaller; /* Adjusted font size */
+        margin: 5px; /* Adjusted margin */
+        margin-right: 10px; /* Adjusted margin */
+
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.left-corner-paragraph {
+    text-align: center;
+}
+
+.left-corner-paragraph h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.left-corner-paragraph p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.aligned-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.aligned-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+
+.aligned-table td:first-child {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.reach {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reach p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reach button {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #00008B;
+    color: #fff;
+    cursor: pointer;
+    background-color: #00008B;
+    transition: background-color 0.3s ease;
+}
+
+.reach button:hover {
+    background-color: #000;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .left-corner-paragraph h1 {
+        font-size: 26px;
+    }
+
+    .left-corner-paragraph p {
+        font-size: 16px;
+    }
+
+    .aligned-table td {
+        font-size: 16px;
+    }
+
+    .reach p {
+        font-size: 16px;
+    }
+
+    .reach button {
+        width: 160px;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .left-corner-paragraph h1 {
+        font-size: 22px;
+    }
+
+    .left-corner-paragraph p {
+        font-size: 14px;
+    }
+
+    .aligned-table td {
+        font-size: 14px;
+    }
+
+    .reach p {
+        font-size: 14px;
+    }
+
+    .reach button {
+        width: 140px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+.footer {
+    background-color: goldenrod;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+td i {
+    margin-right: 5px;
+}
+
+/* Optional: Add some spacing between the icon and text */
+td i {
+    margin-right: 5px;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .footer {
+        overflow-x: auto;
+    }
+
+    table {
+        width: auto;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+}
+

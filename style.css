@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    margin-right: 10px; /* Adjusted margin */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0; /* Smaller padding */
+    color: yellow;
+    background-image: url('navbar_background.jpg');
+    /*  Dark blue background color */
+    /*border-radius: 20px; /* Rounded corners */
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: yellow; /* Change color to darken blue */
+    text-transform: uppercase;
+    margin: 0 5px; /* Adjusted margin between links */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a:last-child {
+    margin-right: 20px; /* Added margin after the "Contact" link */
+}
+
+.navbar a::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #00008B;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s, opacity 0.5s;
+    opacity: 0; /* Initially hide the underline */
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    opacity: 1; /* Show the underline on hover */
+}
+
+/*nav responsiveness*/
+/* Existing CSS */
+
+/* Existing CSS */
+
+/* Existing CSS */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 0; /* Adjusted padding */
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: smaller; /* Adjusted font size */
+        margin: 5px; /* Adjusted margin */
+        margin-right: 10px; /* Adjusted margin */
+
+    }
+}
+
+
+
+/* Adjusted slide */
+.SLIDE {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    height: 30%;
+    width: 30%;
+    transition: transform 0.5s ease;
+    animation: slideAnimation 7s linear infinite running;
+}
+
+.slide img {
+    margin-right: 15px;
+    width: 60%;
+    height: 60%;
+    float: left;
+    object-fit: cover;
+}
+
+/* Adjusted slide animation */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Adjusted image description */
+.image-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-description img {
+    width: auto;
+    height: 200px;
+}
+
+.image-description p {
+    margin-top: 10px;
+    display: inline-block;
+    font-family: serif;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust image height in image description */
+    .image-description img {
+        height: auto;
+        width: auto;
+    }
+    /* Adjust font size in image description */
+    .image-description p {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Hide image description on small screens */
+    .image-description {
+        display: none;
+    }
+}
+
+
+
+/* Updated CSS for responsiveness and styling */
+
+.reach {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reach p {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.reach button {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 10px; /* Added margin */
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid #00008B;
+    color: goldenrod;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: 0.5s;
+    display: inline-block; /* Changed display to inline-block */
+}
+
+.reach button span {
+    background: black;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.reach button:hover span {
+    width: 100%;
+}
+
+.reach button:hover {
+    background: black;
+    border: none;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Hide images and descriptions on smaller screens */
+    .slide img,
+    .image-description {
+        display: none;
+    }
+    /* Decrease space between nav and footer */
+    nav,
+    footer {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Hide images and descriptions on even smaller screens */
+    .slide img,
+    .image-description {
+        display: none;
+    }
+    /* Decrease space between nav and footer */
+    nav,
+    footer {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+
+.footer {
+    background-color: goldenrod;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+td i {
+    margin-right: 5px;
+}
+
+/* Optional: Add some spacing between the icon and text */
+td i {
+    margin-right: 5px;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .footer {
+        overflow-x: auto;
+    }
+
+    table {
+        width: auto;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+}
+
