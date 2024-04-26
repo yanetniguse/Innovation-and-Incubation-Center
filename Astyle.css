@@ -129,10 +129,11 @@ body{
 .about-image {
     flex: 1;
     margin-right: 20px;
+     margin-left: 20px;
 }
 
 .about-image img {
-    width: 50%;
+    width: 66%;
     height: auto;
     display: block;
     border-radius: 5px;
